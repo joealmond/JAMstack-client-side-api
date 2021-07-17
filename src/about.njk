@@ -1,0 +1,12 @@
+---
+title: Hírek a nagyvilágból
+layout: base.njk
+---    
+
+<div class="container"></div>
+<h1>Olvass híreket a nagyvilágból, eredeti forrásból</h1>
+<div>Ez az oldal HTML, CSS és Javascript segítségével jött létre és JAMstack oldalként kiszolgálva. Forrás NewsAPI.org</div>
+
+{% for item in news %}
+    <a href="/{{ item.country}}">{{ item.country }}</a>
+{% endfor %}}
